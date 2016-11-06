@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Matt DuLeone</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css" />
+        
+        <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+        
+        <script type="text/javascript" src="./scripts/app.js"></script>
+        <script type="text/javascript" src="./scripts/controllers/header.js"></script>
+        <script type="text/javascript" src="./scripts/controllers/home.js"></script>
+        <script type="text/javascript" src="./scripts/controllers/projects.js"></script>
+        <script type="text/javascript" src="./scripts/controllers/resume.js"></script>
+        <script type="text/javascript" src="./scripts/controllers/contact.js"></script>
+        <script type="text/javascript" src="./scripts/directives/mdlProject.js"></script>
+        <script type="text/javascript" src="./scripts/directives/project.controller.js"></script>
+    </head>
+    <body ng-app="app">
+        <header ng-controller="HeaderController">
+            <span class="name"><a href="#/">Matt DuLeone</a></span>
+            <nav>
+                <ul>
+                    <li ng-repeat="nav in navLinks"><a class="{{isCurrentPath(nav.href)}}" ng-href="{{nav.href}}">{{nav.name}}</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main ng-view="">
+            
+        </main>
+    </body>
+</html>

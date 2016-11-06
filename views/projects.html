@@ -1,0 +1,11 @@
+<div class="container">
+    <!-- <div ng-repeat="proj in projects" class="project">
+        <span class="title"><a target="_blank" href="{{proj.href}}">{{proj.title}}</a></span>
+        <span class="description">{{proj.desc}}</span>
+        // <span class="title"><a target="_blank" href="http://duleone.com/craps">Casino Craps</a></span>
+        // <span class="description">A Front-End implementation of the popular Casino table game, Craps! Complete with a tutorial, this is an excellent and fun way to learn to play Craps without the fear of losing your shirt! You start with $10,000, and table stakes allow for you to be as frugal or as extravigant as you wish, allowing bets of all sizes, from $10 to $10,000.</span> 
+    </div> -->
+    <div class="projects">
+        <div mdl-project ng-repeat="proj in projects" title="{{proj.title}}" href="{{proj.href}}" desc="{{proj.desc}}" repo="{{proj.repo}}" ></div>
+    </div>
+</div>

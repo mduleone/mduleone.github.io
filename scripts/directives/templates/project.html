@@ -1,0 +1,5 @@
+    <div class="project">
+        <p class="title"><a target="_blank" ng-href="{{proj.href}}">{{proj.title}}</a></p>
+        <p class="description" ng-bind-html="proj.desc | rawHtml"></p>
+        <p class="repository" ng-show="showRepo()"><a ng-href="{{proj.repo}}" target="_blank">Repository</a></p>
+    </div>

@@ -1,0 +1,298 @@
+body {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: none;
+}
+
+/* Tags */
+
+header {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 19px;
+    padding: .5em;
+    background: white;
+}
+
+main {
+    position: relative;
+    margin-top: 2em;
+    bottom: 0;
+    width: 100%;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    text-decoration: none;
+    /*border-right: 1px solid #000;*/
+    /*border-left: 1px solid #000;*/
+}
+.nav:hover {
+    color: black;
+    cursor: pointer;
+}
+nav a:hover {
+    text-decoration: underline;
+    /*color: #000;*/
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    padding: 0 0.5em;
+    border-left: 1px solid black;
+}
+nav li:first-child {
+    border-left: none;
+}
+nav {
+    float: right;
+    margin: 0 1em 0em 0em;
+}
+
+/* Classes */
+.name {
+    float: left;
+}
+
+.name a, .name a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 1em 0 0 0;
+    margin: auto;
+    font-size: 19px;
+}
+
+.about {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.about .line:nth-child(n+1):before {
+    content: " ";
+}
+.projects, .contacts, .resume {
+    max-width: 736px;
+    margin: 0 auto;
+}
+.project {
+    border-radius: 3px;
+    box-shadow: 5px 5px 1em darkslategray;
+    margin: 1em;
+    padding: 1em;
+}
+
+.project .title {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.project .title a {
+    color: blueviolet;
+}
+
+.project .title a:hover {
+    text-decoration: none;
+    color: forestgreen;
+    cursor: pointer;
+}
+
+.project p {
+    margin: 0;
+}
+
+.project .repository {
+    margin-top: 1em;
+}
+
+.contacts {
+    list-style: none;
+}
+
+.fa {
+    color: #000;
+    width: 1em;
+    display: inline-block;
+    text-align: center;
+}
+
+.resume {
+    font-size: 19px;
+    position: relative;
+}
+
+.resume h2 {
+    font-family: sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0;
+    display: block;
+}
+
+.resume h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0;
+    display: inline-block;
+}
+
+.resume h4 {
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 19px;
+    margin: 0;
+    display: block;
+}
+
+.resume .section {
+    margin: .5em 0;
+}
+
+.resume .section:first-child {
+    margin-top: 0;
+}
+
+.resume .subsection {
+    margin-bottom: .5em;
+}
+
+.resume .subsection:last-child {
+    margin-bottom: 0;
+}
+
+.resume .date {
+    float: right;
+}
+
+.resume .content {
+    text-align: justify;
+}
+
+h4.u-inline {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 736px) {
+    nav a.active {
+        text-decoration: underline;
+    }
+
+    .resume .date {
+        display: block;
+        float: none;
+    }
+
+    .resume .section {
+        float: left;
+    }
+    .resume h3 {
+        display: block;
+    }
+    .resume h4 {
+        display: block;
+    }
+
+    .resume .content {
+        text-align: left;
+    }
+
+    .project .title a:hover {
+        color: blueviolet;
+    }
+
+    .project a {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    header {
+        font-size: 25px;
+        text-align: center;
+        border-bottom: solid #c0c0c0 1px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav a {
+        font-size: 25px;
+    }
+    a:hover{
+        text-decoration: none;
+        background: transparent;
+    }
+    nav {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul {
+        position: relative;
+        margin: 0 auto;
+    }
+    .nav {
+        font-size: 25px;
+        text-align: center;
+    }
+    .name {
+        display: block;
+        width: 100%;
+    }
+    main {
+        margin-top: 4em;
+    }
+    .container {
+        height: auto;
+    }
+    .about {
+        position: relative;
+        padding-top: 5em;
+    }
+    nav li {
+        margin: 0 0em;
+        padding: 0 0.1em;
+    }
+    nav li:first-child{
+        padding-left: 0;
+    }
+    nav li:last-child{
+        padding-right: 0;
+    }
+    .about .line {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header, nav a {
+        font-size: 19px;
+    }
+    main {
+        margin-top: 2.5em;
+    }
+}
