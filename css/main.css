@@ -169,7 +169,7 @@ nav {
 }
 
 .resume .section {
-    margin: .5em 0;
+    margin: .75em 0;
 }
 
 .resume .section:first-child {
@@ -177,11 +177,15 @@ nav {
 }
 
 .resume .subsection {
-    margin-bottom: .5em;
+    margin-bottom: .75em;
 }
 
 .resume .subsection:last-child {
     margin-bottom: 0;
+}
+
+.resume ul {
+    padding-left: 36px;
 }
 
 .resume .date {
@@ -190,6 +194,7 @@ nav {
 
 .resume .content {
     text-align: justify;
+    margin-top: 4px;
 }
 
 h4.u-inline {
@@ -204,10 +209,13 @@ h4.u-inline {
     .resume .date {
         display: block;
         float: none;
+        color: #aaa;
+        font-weight: lighter;
     }
 
     .resume .section {
-        float: left;
+        width: 100%;
+        display: block;
     }
     .resume h3 {
         display: block;
