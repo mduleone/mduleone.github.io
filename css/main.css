@@ -307,3 +307,21 @@ h4.u-inline {
         margin-top: 2.5em;
     }
 }
+
+@media only print {
+    header {
+        position: absolute;
+        top: 0;
+    }
+    main {
+        position: absolute;
+        bottom: 0;
+        top: 2em;
+        margin-top: 0;
+        left: 0;
+        right: 0;
+    }
+    .section {
+        orphans: 3;
+    }
+}
