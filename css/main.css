@@ -203,6 +203,7 @@ nav {
 
 .resume .date {
     float: right;
+    font-size: 16px;
 }
 
 .resume .content {
@@ -324,7 +325,7 @@ h4.u-inline {
 
 @media only print {
     * {
-        font-family: Times;
+        font-family: Georgia;
     }
     header {
         max-width: 736px;
