@@ -150,6 +150,11 @@ nav {
     position: relative;
 }
 
+.resume .address {
+    display: none;
+    visibility: hidden;
+}
+
 .resume h2 {
     font-family: sans-serif;
     text-decoration: underline;
@@ -309,9 +314,15 @@ h4.u-inline {
 }
 
 @media only print {
+    * {
+        font-family: Times;
+    }
     header {
+        max-width: 736px;
+        margin: 0 auto;
+        padding: 0;
         position: absolute;
-        top: 0;
+        border-bottom: 1px solid #ccc;
     }
     main {
         position: absolute;
@@ -321,7 +332,25 @@ h4.u-inline {
         left: 0;
         right: 0;
     }
+    nav {
+        display: none;
+        visibility: hidden;
+    }
+    .name {
+        font-size: 30px;
+        font-family: Georgia;
+    }
+    .container {
+        padding-top: 0;
+    }
     .subsection {
         page-break-inside: avoid;
+    }
+    .resume .address {
+        display: block;
+        visibility: visible;
+    }
+    .resume h2, .resume h3, .resume h4 {
+        font-family: Times;
     }
 }
