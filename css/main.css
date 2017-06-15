@@ -82,14 +82,22 @@ nav {
 }
 
 .about {
-    position: absolute;
+    padding-top: 48px;
     width: 100%;
     margin: auto;
     text-align: center;
 }
 
-.about .line:nth-child(n+1):before {
-    content: " ";
+.about .line:nth-child(n+1) {
+    margin-left: 4px;
+}
+
+.coa {
+    margin: 0 auto;
+    display: block;
+    margin-top: 48px;
+    max-width: 540px;
+    width: 100%;
 }
 .projects, .contacts, .resume {
     max-width: 736px;
@@ -209,8 +217,7 @@ h4.u-inline {
     .resume .date {
         display: block;
         float: none;
-        color: #aaa;
-        font-weight: lighter;
+        color: #668;
     }
 
     .resume .section {
@@ -276,10 +283,6 @@ h4.u-inline {
     }
     .container {
         height: auto;
-    }
-    .about {
-        position: relative;
-        padding-top: 5em;
     }
     nav li {
         margin: 0 0em;
