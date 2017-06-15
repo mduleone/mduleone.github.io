@@ -321,7 +321,7 @@ h4.u-inline {
         left: 0;
         right: 0;
     }
-    .section {
-        orphans: 3;
+    .subsection {
+        page-break-inside: avoid;
     }
 }
