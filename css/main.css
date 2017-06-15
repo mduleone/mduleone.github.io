@@ -214,6 +214,12 @@ h4.u-inline {
     display: inline-block;
 }
 
+@media only screen {
+    .resume .section:nth-child(2) {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width: 736px) {
     nav a.active {
         text-decoration: underline;
@@ -228,6 +234,9 @@ h4.u-inline {
     .resume .section {
         width: 100%;
         display: block;
+    }
+    .resume .address {
+        display: none;
     }
     .resume h3 {
         display: block;
