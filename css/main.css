@@ -355,11 +355,18 @@ h4.u-inline {
     .subsection {
         page-break-inside: avoid;
     }
+    .section {
+        page-break-inside: avoid;
+    }
     .resume .address {
         display: block;
         visibility: visible;
     }
     .resume h2, .resume h3, .resume h4 {
         font-family: Times;
+    }
+    .no-print {
+        display: none;
+        visibility: hidden;
     }
 }
