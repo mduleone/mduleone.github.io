@@ -328,7 +328,7 @@ h4.u-inline {
         font-family: Cambria;
     }
     header {
-        max-width: 736px;
+        max-width: 596px;
         margin: 0 auto;
         padding: 0;
         position: absolute;
@@ -359,12 +359,23 @@ h4.u-inline {
     .section {
         page-break-inside: avoid;
     }
+    .resume {
+        position: unset;
+    }
     .resume .address {
         display: block;
         visibility: visible;
     }
     .resume h2, .resume h3, .resume h4 {
         font-family: Cambria;
+    }
+    .resume-coa {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 120px;
+        margin-top: -2em;
+        z-index: 100;
     }
     .no-print {
         display: none;
