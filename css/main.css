@@ -325,7 +325,7 @@ h4.u-inline {
 
 @media only print {
     * {
-        font-family: Georgia;
+        font-family: Cambria;
     }
     header {
         max-width: 736px;
@@ -348,7 +348,7 @@ h4.u-inline {
     }
     .name {
         font-size: 30px;
-        font-family: Georgia;
+        font-family: Cambria;
     }
     .container {
         padding-top: 0;
@@ -364,7 +364,7 @@ h4.u-inline {
         visibility: visible;
     }
     .resume h2, .resume h3, .resume h4 {
-        font-family: Times;
+        font-family: Cambria;
     }
     .no-print {
         display: none;
