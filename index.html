@@ -41,12 +41,20 @@
     <body ng-app="app">
         <header ng-controller="HeaderController">
             <span class="name"><a href="#/">Matt DuLeone</a></span>
+
             <nav>
                 <ul>
                     <li ng-repeat="nav in navLinks"><a class="{{isCurrentPath(nav.href)}}" ng-href="{{nav.href}}">{{nav.name}}</a></li>
                 </ul>
             </nav>
         </header>
+        <div class="print-address-container">
+            <div class="print-address">
+                Jersey City, NJ<br />
+                <a href="mailto:matt@duleone.com">matt@duleone.com</a>
+            </div>
+        </div>
+        <img src="./images/duleone.jpg" class="print-coa" />
         <main ng-view="">
             
         </main>
