@@ -117,12 +117,11 @@ nav {
 }
 
 .project .title a {
-    color: blueviolet;
+    color: #cc0001;
 }
 
 .project .title a:hover {
-    text-decoration: none;
-    color: forestgreen;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -251,10 +250,6 @@ h4.u-inline {
 
     .resume .content {
         text-align: left;
-    }
-
-    .project .title a:hover {
-        color: blueviolet;
     }
 
     .project a {
