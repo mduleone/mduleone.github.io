@@ -73,6 +73,29 @@ nav {
     color: black;
 }
 
+.print-address-container {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    top: calc(2em + 8px);
+    left: 0;
+    right: 0;
+}
+.print-coa {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    z-index: 100;
+}
+.print-address {
+    width: 736px;
+    margin: 0 auto;
+    font-size: 19px;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -147,11 +170,6 @@ nav {
 .resume {
     font-size: 19px;
     position: relative;
-}
-
-.resume .address {
-    display: none;
-    visibility: hidden;
 }
 
 .resume h2 {
@@ -237,9 +255,6 @@ h4.u-inline {
     .resume .section {
         width: 100%;
         display: block;
-    }
-    .resume .address {
-        display: none;
     }
     .resume h3 {
         display: block;
@@ -335,7 +350,7 @@ h4.u-inline {
     main {
         position: absolute;
         bottom: 0;
-        top: 2em;
+        top: 100px;
         margin-top: 0;
         left: 0;
         right: 0;
@@ -357,12 +372,14 @@ h4.u-inline {
     .section {
         page-break-inside: avoid;
     }
+    .projects {
+        margin-top: 4em;
+    }
+    .project {
+        page-break-inside: avoid;
+    }
     .resume {
         position: unset;
-    }
-    .resume .address {
-        display: block;
-        visibility: visible;
     }
     .resume h2, .resume h3, .resume h4 {
         font-family: Cambria;
@@ -376,13 +393,13 @@ h4.u-inline {
         padding: 0;
         margin: 0;
     }
-    .resume-coa {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 120px;
-        margin-top: -2em;
-        z-index: 100;
+    .print-coa {
+        display: block;
+        visibility: visible;
+    }
+    .print-address-container {
+        display: block;
+        visibility: visible;
     }
     .no-print {
         display: none;
