@@ -217,6 +217,10 @@ nav {
     margin-bottom: 0;
 }
 
+.section > .subsection:nth-child(2) {
+    margin-top: 4px;
+}
+
 .resume ul {
     padding-left: 36px;
 }
@@ -237,8 +241,8 @@ h4.u-inline {
     display: inline-block;
 }
 
-.u-mr8 {
-    margin-right: 8px;
+.u-mr4 {
+    margin-right: 4px;
 }
 
 @media only screen {
@@ -389,16 +393,16 @@ h4.u-inline {
     }
     .resume {
         position: unset;
-        font-size: 11px;
+        font-size: 12pt;
     }
     .resume h2, .resume h3, .resume h4 {
         font-family: Cambria;
     }
     .resume h3, .resume h4 {
-        font-size: 12px;
+        font-size: 13pt;
     }
     .resume h2 {
-        font-size: 13px;
+        font-size: 14pt;
         color: #000;
         background-color: #fff;
         font-weight: bold;
@@ -408,7 +412,10 @@ h4.u-inline {
         margin: 0;
     }
     .resume .date {
-        font-size: 9;
+        font-size: 9pt;
+    }
+    .resume a {
+        text-decoration: underline;
     }
     .print-coa {
         display: block;
@@ -431,8 +438,12 @@ h4.u-inline {
     .print-ml-half-pct {
         margin-left: .5%;
     }
+    .print-date-no-float > .date {
+        display: block;
+        float: none;
+    }
     .only-print {
-        display: inline-block;
+        display: inherit;
         visibility: visible;
     }
 }
