@@ -225,6 +225,7 @@ nav {
     float: right;
     font-size: 16px;
     color: #cc0001;
+    vertical-align: top;
 }
 
 .resume .content {
@@ -236,9 +237,17 @@ h4.u-inline {
     display: inline-block;
 }
 
+.u-mr8 {
+    margin-right: 8px;
+}
+
 @media only screen {
     .resume .section:nth-child(2) {
         margin-top: 0;
+    }
+    .only-print {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -380,18 +389,26 @@ h4.u-inline {
     }
     .resume {
         position: unset;
+        font-size: 11px;
     }
     .resume h2, .resume h3, .resume h4 {
         font-family: Cambria;
     }
+    .resume h3, .resume h4 {
+        font-size: 12px;
+    }
     .resume h2 {
+        font-size: 13px;
         color: #000;
         background-color: #fff;
         font-weight: bold;
         border-radius: 0;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
         padding: 0;
         margin: 0;
+    }
+    .resume .date {
+        font-size: 9;
     }
     .print-coa {
         display: block;
@@ -404,5 +421,18 @@ h4.u-inline {
     .no-print {
         display: none;
         visibility: hidden;
+    }
+    .print-half-width {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .section.print-ml-half-pct,
+    .print-ml-half-pct {
+        margin-left: .5%;
+    }
+    .only-print {
+        display: inline-block;
+        visibility: visible;
     }
 }
