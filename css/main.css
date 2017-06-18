@@ -354,7 +354,7 @@ h4.u-inline {
         font-family: Cambria;
     }
     header {
-        max-width: 596px;
+        max-width: 736px;
         margin: 0 auto;
         padding: 0;
         position: absolute;
@@ -403,21 +403,17 @@ h4.u-inline {
     }
     .resume h2 {
         font-size: 14pt;
-        color: #000;
-        background-color: #fff;
+        color: inherit;
+        background-color: inherit;
         font-weight: bold;
         border-radius: 0;
-        /*text-decoration: underline;*/
         padding: 0;
         margin: 0;
     }
     .resume .date {
         font-size: 9pt;
     }
-    .print-coa {
-        display: block;
-        visibility: visible;
-    }
+    .print-coa,
     .print-address-container {
         display: block;
         visibility: visible;
